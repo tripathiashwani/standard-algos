@@ -52,7 +52,7 @@ public:
 };
 
 int main(){
-    int n=5;
+    int n;
     cin>>n;
     int arr[n];
     for(int i=0;i<n;i++)cin>>arr[i];
@@ -67,14 +67,7 @@ int main(){
         cin>>l>>r;
         int ind,val;
         cin>>ind>>val;
-        ind =2,val=1;
-        cout<<"before update"<<endl;
-        for(int i=0;i<4*n;i++)cout<<sg.seg[i]<<" ";
-       
-
         sg.update(0,0,n-1,ind,val);
-          cout<<"after update"<<endl;
-        for(int i=0;i<4*n;i++)cout<<sg.seg[i]<<" ";
         cout<<sg.query(0,0,n-1,l ,r)<<endl;
     }
     return 0;

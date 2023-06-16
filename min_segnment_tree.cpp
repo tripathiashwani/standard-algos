@@ -67,7 +67,6 @@ int main(){
         cin>>l>>r;
         int ind,val;
         cin>>ind>>val;
-        ind =2,val=9;
         sg.update(0,0,n-1,ind,val);
         cout<<sg.query(0,0,n-1,l ,r)<<endl;
     }
