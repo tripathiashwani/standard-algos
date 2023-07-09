@@ -56,7 +56,6 @@ int main(){
     cin>>n;
     int arr[n];
     for(int i=0;i<n;i++)cin>>arr[i];
-    int arr[n]={2,3,-1,1,7};
     SGTree sg(n);
     sg.build(0,0,n-1,arr);
     int q;
